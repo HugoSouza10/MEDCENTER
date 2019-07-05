@@ -1,0 +1,578 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header{
+    display: flex;
+    height:120px;
+    justify-content: center;
+
+}
+.container{
+    justify-content:space-between;
+    display:flex;
+    width:990px;
+
+}
+.Logo{
+    display: flex;
+    align-items:center;
+
+}
+
+.Menu{
+    display: flex;
+    align-items:center;
+
+}
+nav ul,
+nav li{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding:15px;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#727272;
+}
+nav .active a{
+    color:white;
+    background-color:#39aae1;
+}
+
+nav a:hover{
+    background-color:#39aae1;
+    color: #ffffff;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image:url('../_IMAGEM/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height:670px;
+}
+.column{
+    flex-direction: column;
+}
+.hedline{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    flex:1;
+}
+
+.hedline h1{
+    width:300px;
+    color: #ffffff;
+    font-size:60px;
+    text-shadow:0px 1px 0px #555;
+    margin:0;
+    padding:0;
+    max-width:350px;
+
+}
+
+/*margin:0; padging:0; POIS POR PADRÃO TODA DIV VEM COM UMA MARGEM*/
+
+.hedline h2{
+    color: #ffffff;
+    font-size:21px;
+    text-shadow:0px 1px 0px #555;
+    margin:0;
+    padding:0;
+    max-width:350px;
+    margin-top: 30px;
+}
+
+.option{
+    display: flex;
+    height:210px;
+}
+
+.banner1,
+.banner2,
+.banner3{
+    flex:1;
+    color: #ffffff;
+    padding:20px;
+}
+
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner_title{
+    font-size:21px;
+}
+
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.option a{
+    display:inline-block;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration:none;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex:2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget{
+    height:300px;
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+
+.widget_title_text{
+     color: black;
+    font-size:21px;
+    font-weight: bold;
+}
+
+article a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+article{
+    flex:1;
+    min-width:300px;
+    margin-right:20px;
+}
+
+.widget_title_barra{
+    width:50px;
+    height:2px;
+    background-color: #36a9e1;
+    margin-top:10px;
+}
+
+article .news_data{
+     display: flex;
+}
+
+article .new_posted_at{
+      background-color:#2b4c99 ;
+      color: #ffffff;
+      font-size:12px;
+      padding:10px;
+}
+
+article .new_comments{
+    margin-left:2px;
+    background-color:#39aae1;
+    color: #ffffff;
+    font-size:12px;
+    padding:10px;
+}
+
+article .news_thumbnail{
+    margin-top:30px;
+}
+
+article .news_thumbnail img{
+    width:100%;
+    height:auto;
+}
+
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size:23px;
+    color: black;
+}
+
+.widget_make_texto{
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom: solid 1px darkgray;
+
+}
+
+.widget_medi_Informação{
+    display: flex;
+    width: 300px;
+
+
+}
+
+
+/*ÁREA DO FOOTER*/
+.widget_medi_contato{
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    flex-direction: column;
+
+}
+
+
+/*ÁREA LATERAL DO SITE*/
+
+.widget_make_texto{
+    font-size: 14px;
+}
+
+.fone{
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+
+.fone_barra{
+    width:auto;
+    height:1px;
+    background-color: darkgray;
+}
+
+.fone span{
+    font-weight: bold;
+    color: black;
+    border-bottom:solid 1px darkgrey;
+}
+
+.email{
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.email_barra{
+    margin-bottom: 10px;
+    height:1px;
+    background-color: darkgrey;
+}
+
+.email span {
+    border-bottom: 1px solid darkgrey;
+}
+
+.make_contato .endereço{
+    font-size: 13px;
+}
+
+.make_contato .endereço_barra{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid darkgray;
+}
+
+.make_contato .endereço span{
+    border-bottom: 1px solid darkgrey;
+}
+
+
+article .news_resume{
+    font-size:13px;
+    color: #5c5c5c;
+    line-height:20px;
+    margin-bottom:30px;
+}
+
+footer{
+    background-color:#1e1e1e;
+    display:flex;
+    justify-content: center;
+    color: #ffffff;
+}
+.footer_menu{
+    display:flex;
+    flex:1;
+
+}
+
+.fm1,.fm2,.fm3{
+    flex:1;
+}
+
+.fm1{
+    background-color: #39aae1;
+}
+.fm2{
+    background-color: #0079c7;
+}
+.fm3{
+    background-color: #2b4c99;
+}
+
+.footer_menu .fm_titulo{
+    color: #ffffff;
+    font-size:20px;
+
+}
+
+
+.departament{
+    display: flex;
+    flex-wrap: wrap;
+}
+.widget_departamento{
+    margin-bottom: 20px;
+    margin-right:40px;
+    width:125px;
+    height:125px;
+    background-color: #39aae1;
+}
+
+.widget_body_texto{
+    display:flex;
+    flex:1;
+    width:300px;
+    line-height:20px;
+    font-size:12px;
+    color:darkgray;
+}
+
+.lates_post_comentario{
+    display: flex;
+    margin-bottom:20px;
+    font-size:12px;
+    color:deepskyblue;
+
+}
+
+.widget_texto_informação{
+    display: flex;
+    width:100px;
+    font-size: 12px;
+    color:darkgray;
+    margin-top:20px;
+}
+
+.widget_medi_contato{
+    display: flex;
+    font-size: 12px;
+}
+
+.footer_menu .fm_texto{
+    margin-top:10px;
+    font-size:12px;
+}
+
+.footer_menu a{
+    padding:20px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_area{
+    display:flex;
+    flex:1;
+}
+
+.footer_areaitem{
+    flex:1;
+    color: #ffffff;
+}
+.flexcolumn{
+    flex-direction: column;
+}
+
+footer .widget_title_text{
+    color: #ffffff;
+
+}
+.footer_copy{
+    display: flex;
+    height: 40px;
+    line-height:40px;
+    color:#5c5c5c;
+    font-size:12px;
+    border-top:1px solid #2c2c2c;
+    margin-top:30px;
+}
+/*margin:0; padging:0; POIS POR PADRÃO TODA DIV VEM COM UMA MARGEM*/
+
+
+/*hedline: NÃO TEM TAMANHO FIXO PORQUE ELE IRÁ SE ADAPTAR CONFORME O TAMANHO DA TELA*/
+
+
+/*OBS: DISPLAY FLEX NO HEADER PORQUE ELE É A DIV PRINCIPAL QUE CONTROLA O CABEÇALHO*/
+
+/* justify-content:space-between; PARA O CONTEÚDO FICAR DE UMA PONTA A OUTRA*/
+
+
+/* display: block; SERVE BASICAMENTE PARA TRANSFORMAR UM OBJETO EM BLOCO, SENDO ASSIM É POSSÍVEL EDITAR ÁREA DO
+CONTEÚDOE TUDO MAIS*/
+
+
+/*text-decoration:none; SERVE PARA TIRAR A DECORAÇÃO DE OBJETOS COMO POR EXEMPLO, LINK*/
+
+
+/* background-size: cover; SERVE PARA A IMAGEM NÃO SAIR DA MARGEM*/
+
+/* background-image:url('../_IMAGEM/img1.jpg'); AQUI É BOM PARA PODER COLOCAR INTEM EM CIMA DA IMAGEM*/
+
+/*display:inline-block; DEIXA DO TAMANHO DO OBJETO*/
+
+
+
+
+
+
+/*CÓDIGO DA PARTE RESPONSIVA*/
+
+
+/*TABLET*/
+
+@media (max-width:768px){
+    .footer_menu{
+
+    }
+
+    .footer_menu a{
+        text-align: center;
+    }
+    .footer_area{
+       flex-wrap: wrap;
+        padding: 20px;
+    }
+    .footer_copy{
+        margin-top:10px;
+        padding: 10px;
+    }
+    .hedline h1{
+        padding: 20px;
+    }
+    .hedline h2{
+        padding: 20px;
+    }
+}
+
+
+.Menu_Mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+    height: 2px;
+    background-color: #36a9e1;
+}
+.Menu nav ul{
+
+}
+
+
+/*TABLET*/
+@media (max-width:600px) {
+    .hedline h1{
+        font-size:55px;
+    }
+    .hedline h2{
+        font-size: 17px;
+    }
+    .option{
+        height: auto;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #geral section{
+        padding: 20px;
+        margin-top:40px;
+    }
+    #geral aside{
+        margin-top:-60px;
+        padding: 20px;
+
+    }
+    .widget{
+        height: auto;
+    }
+    .widget .body{
+        width: 333px;
+    }
+
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_copy{
+        padding-left: 20px;
+    }
+
+
+    header .container{
+        flex-direction:row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    header{
+        height:auto;
+    }
+
+    .Logo{
+        padding-left: 20px;
+    }
+    .Menu_Mobile{
+        display: flex; /*PARA O MENU FICAR FLEXIVÉL E PRA COLOCAR OS MENÚ NO MEIO*/
+        flex-direction: column; /*PARA O MENÚ SER MOSTRADO UM ABAIXO DO OUTRO*/
+       justify-content: space-around;
+    }
+
+
+    }
+
+
+
+
+/* CELULAR*/
+
+
